@@ -86,7 +86,7 @@ li {
 }
 
 .menu-hamburger {
-    position: absolute;
+    position: fixed;
     top: 1rem;
     right: .5rem;
     width: 4rem;
@@ -142,7 +142,7 @@ li {
 }
 .about-heading {
     display: flex;
-    color:rgb(58,132,180);
+    color:black;
     flex-direction: column;
     align-items: center;
     text-align: right;
@@ -151,13 +151,13 @@ li {
 
 .about-heading p{
     font-weight: 200;
-    color:rgb(58,132,180);
+    color:black;
     text-align: center;
 }
 
 .about-text {
     text-align: center;
-    color:rgb(58,132,180);
+    color:black;
     font-size: 2rem;
 }
 
@@ -185,7 +185,7 @@ section#skills {
     opacity: .9;    
     padding: 5rem;
     margin-bottom: 5rem;
-    color: rgb(58,132,180); 
+    color: black;
 }
 
 nav.social-media-contact {
