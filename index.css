@@ -35,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style-type: none;
+}
+
 .top-nav {    
     position: fixed;
     width: 100vw;
@@ -131,13 +135,14 @@ a {
 }
 
 .about-description {
-    background-color: black;
+    background-color: white;
     border-radius: 20px;
     padding: 2.5rem;
+    opacity: .9;
 }
 .about-heading {
     display: flex;
-    color: white;
+    color:rgb(58,132,180);
     flex-direction: column;
     align-items: center;
     text-align: right;
@@ -146,13 +151,13 @@ a {
 
 .about-heading p{
     font-weight: 200;
-    color: #ffffffeb;
+    color:rgb(58,132,180);
     text-align: center;
 }
 
 .about-text {
     text-align: center;
-    color: white;
+    color:rgb(58,132,180);
     font-size: 2rem;
 }
 
@@ -172,6 +177,15 @@ section#about {
     display: inline-block;
     text-align: -webkit-right;
     height: 100vh;
+}
+
+section#skills {
+    background-color: white;
+    border-radius: 5rem;
+    opacity: .9;    
+    padding: 5rem;
+    margin-bottom: 5rem;
+    color: rgb(58,132,180); 
 }
 
 nav.social-media-contact {
@@ -285,43 +299,11 @@ section#skills {
 
 }
 
-.image-text p {
-   position: absolute;
-   top: 10%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   font-weight: 1000;
-   font-size: 2.5rem;
-   margin-top: 2.5rem;
-   opacity: 1;
-}
-
-.tech-stacks {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    opacity: 1;
-    transform: translate(-50%);
-    font-size: 1.5rem;
-
-}
-
-.tech-stacks h1 {
-    margin-bottom: 5px;
-}
-
-.image-links {  
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform:translate(-50%, 50%);
-    font-size: 2.5rem;
-}
 
 
 .image-wrapper {
     width: 90%;
-    height: 80%;
+    height: 85%;
     background-color: white;
     position: absolute;
     top: 10%;
@@ -330,8 +312,43 @@ section#skills {
     border-radius: 2rem;
     opacity: .8;
     transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
 }
 
+.image-text, .image-description, .tech-stacks, .image-links {
+    padding: 15px;
+    
+}
+
+.image-text h5 {
+    font-size: 2.5rem;
+}
+
+.image-description h6 {
+    font-size: 2rem;
+}
+
+.image-description p {
+    font-size: 1.3rem;  
+}
+
+.tech-stacks h1 {
+    font-size: 2rem;
+}
+
+.tech-stacks li {
+    font-size: 1.5rem;
+}
+
+.image-links {
+    font-size: 1.5rem;
+}
+
+.projects-head {
+    font-size: 5rem;
+    font-weight: 1000;
+}
 .hidden {
     visibility: hidden;
 }
