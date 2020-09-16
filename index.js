@@ -1,22 +1,13 @@
 $(document).ready(function () {
-    $('.menu-hamburger').on('click', function () {
-        $(this).toggleClass('open');
-        $('.top-nav').toggleClass('open');
+    $('.menu-toggle').on('click', function () {
+        $(this).toggleClass('toggled');
+        $('.top-nav').toggleClass('toggled');
     })
 });
 
 $(document).ready(function () {
     $('.nav-links').on('click', function() {
-        $('.top-nav').toggleClass('open');
+        $('.top-nav').toggleClass('toggled');
     })
 })
 
-$(".image-item").on({
-    mouseenter: function () {
-        $( this ).find('.image-wrapper').removeClass('hidden');
-    },
-    mouseleave: function (event) {
-        $( this ).find('.image-wrapper').addClass('hidden');
-        }
-    }
-);

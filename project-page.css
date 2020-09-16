@@ -1,0 +1,271 @@
+/* Global */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+ 
+body {
+    width: 100%;
+    height: 100%;
+    background: url("images/mountain.jpg") no-repeat center fixed;
+    background-size: cover;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: #ffb0b0;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #5d94cc;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: hotpink;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+img {
+    max-width: 100%;
+    border: 2px solid black;
+    border-radius: 2rem;
+}
+
+.more-info {
+    line-height: 10rem;
+    background: white;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    padding: 1.5rem;
+    margin: 2rem;
+}
+
+/* Header */
+
+.top-nav {
+    width: 100%;
+    height: 100vh;
+    background: url(images/12dec8938220093eb7f1fdb8a9ce40b8-the-rocky-mountains.jpg);
+    transition: ease-in-out .5s;
+    position: fixed;
+    top: -100vh;
+    z-index: 500;
+}
+
+.nav-links{
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin: 0 2rem;
+
+}
+
+.nav-link {
+    font-size: 5rem;    
+    padding: 1rem;
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+    background: rgb(255,176,176);
+    background: linear-gradient(180deg, rgba(255,176,176,1) 20%, rgba(93,148,204,1) 67%);   
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.top-nav.toggled {
+    top: 0;
+    border-radius: intial;
+    transition: ease-in-out .5s;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 1rem;
+    right: .5rem;
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1500;
+    margin: 10px;
+    cursor: pointer;
+        
+}
+
+.bar {
+    background: linear-gradient(270deg,rgba(255,176,176,1) 20%, rgba(93,148,204,1) 67%);   
+    width: 100%;
+    height: 4px;
+    border-radius: .8rem;
+}
+
+/* Projects page CSS */
+
+.project-main-image {
+    width: 100%;
+    
+}
+
+.project-main-image img {
+    width: 35rem;
+    height: 35rem;
+    margin: 0 auto; 
+   
+}
+
+.project-main-image img {
+    width: 100%;
+    height: 50rem;
+    margin: 0 auto;
+    max-width: 50rem;
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.project-title {
+    text-align: center;
+    padding: 3rem;
+}
+
+.project-title h1 {
+    font-size: 4rem;
+}
+
+.project-title h6 {
+    font-size: 2rem;
+}
+
+.project-description {
+    text-align: center;
+    padding: 3rem;
+    background: rgba(255, 255, 255, .7);
+}
+
+.project-screenshots {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.project-screenshot {
+    padding: 1rem;
+}
+
+.project-screenshot img {
+    width: 35rem;
+    height: 35rem;
+}
+
+    /* Footer */
+
+    footer {    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2rem;
+        text-align: center;
+        background: rgba(255, 255, 255, .9);
+    }
+    
+    footer img {
+        width: 8rem;
+    }
+    
+    i.fa.fa-linkedin-square, i.fa.fa-github {
+        font-size: 2.5rem;
+    }
+    
+/* #Media Queries
+================================================== */
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 959px) {
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+  
+    .nav-links {
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+  
+    .landing-page-text {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        text-align: center;
+        z-index: 2;
+        color: white;
+        font-size: 5rem;
+    }   
+
+
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 320px) {
+    .project-screenshots {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        flex-direction: column;
+    }
+}
+
+
+}
